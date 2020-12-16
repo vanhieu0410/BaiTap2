@@ -43,7 +43,7 @@ public class FileFactoty {
 			
 			String line = bufferReader.readLine();//Tạo biến line kiểu String để lưu dữ liệu 1 dòng đọc được.
 			while(line != null) { //Vòng lặp được lặp lại đọc từng dòng đến khi không còn dòng nào thì dừng.
-				String []parts = line.split("[^a-zA-Z0-9]+");//Phương thức split("[...]") 
+				String []parts = line.split("[^a-zA-Z0-9]+");//Phương thức split("[...]") bỏ đi những phần tử nào không phải kí tự từ a- z và 0 -9, bỏ cả những dấu cách liền nhau.
 			
 				for(String w: parts) //for each chạy từng phần tử trong mảng string vừa được gán giá trị.
 				{
